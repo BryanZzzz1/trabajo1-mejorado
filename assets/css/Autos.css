@@ -1,0 +1,9 @@
+h1.banner-auto{
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: Impact;
+}
