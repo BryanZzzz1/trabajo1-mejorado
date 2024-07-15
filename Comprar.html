@@ -3,10 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/header.css">  
+    <link rel="stylesheet" href="./assets/css/carritodecompra.css">    
+    <style>
+
+        
+    </style>
     <title>Autos del Mar - Comprar</title>
 </head>
 <body>
-    
 
+    <header class="barra-de-navegacion">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="font-size: 40px;" href="index.html">Autos del Mar</a>
+    
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Comprar.html">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:history.back()">Atras</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Autos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Todos_Autos.html">Todos los autos</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="SUVs.html">SUVs</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="Camiones.html">Camiones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<h1 style="background-color: black; color: white; text-align: center; font-family: impact; padding: 20px;" onclick="toggleCart()">CARRITO DE COMPRAS</h1>
+
+<div class="tarjetas-de-autos">
+    <div class="card-container">
+        <div style="background-color: black;" class="card">
+            <img src="./assets/img/SUVs/wagoncar1.jpg" alt="" width="300" height="200">
+            <div class="card-content">
+                <h1>Mercedes-Benz G wagon - blanco</h1>
+                <p style="color: rgb(255, 255, 255);">El Mercedes-Benz G-Wagon en blanco es una combinación de lujo y
+                    elegancia que redefine el estilo en la carretera. Con su imponente presencia y su carrocería pintada
+                    en un blanco nítido y reluciente, este vehículo emana una sofisticación sin igual. El blanco resalta
+                    las líneas angulares y los detalles refinados del G-Wagon, creando una estampa que es tanto
+                    impresionante como atemporal. Este tono de blanco evoca una sensación de pureza y distinción</p>
+                <button class="buy-btn" onclick="addToCart('Mercedes-Benz G wagon - blanco')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(0, 0, 0);" class="card">
+            <img src="./assets/img/Groove/1-rojo.jpg" alt="" width="300" height="200">
+            <div class="card-content">
+                <h1>Groove 2024 - Rojo</h1>
+                <p style="color: rgb(255, 255, 255);">El Groove en rojo es una expresión audaz de estilo y dinamismo.
+                    Con su carrocería pintada en un rojo vibrante y enérgico, este automóvil captura la atención
+                    dondequiera que vaya. La intensidad del color rojo resalta las líneas aerodinámicas y los contornos
+                    fluidos del Groove, creando una apariencia deportiva y emocionante. Este tono de rojo evoca una
+                    sensación de pasión y vitalidad, haciendo que el Groove rojo sea la opción perfecta para aquellos
+                    que buscan hacer una declaración audaz en la carretera.</p>
+                <button class="buy-btn" onclick="addToCart('Groove 2024 - Rojo')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/img/Groove/3-blanco.jpg" alt="" width="300" height="200">
+            <div class="card-content">
+                <h1>Groove 2024 - Blanco</h1>
+                <p style="color: rgb(255, 255, 255);">El Groove en blanco es una expresión de elegancia y
+                    sofisticación. Con su carrocería pintada en un blanco puro y brillante, este automóvil emana una
+                    sensación de frescura y modernidad. La simplicidad del color blanco resalta los detalles de diseño
+                    del Groove, desde sus líneas limpias hasta sus características distintivas. Este tono de blanco
+                    transmite una sensación de pureza y refinamiento, convirtiendo al Groove blanco en una elección
+                    popular para aquellos que buscan un estilo atemporal y sofisticado en su vehículo.</p>
+                <button class="buy-btn" onclick="addToCart('Groove 2024 - Blanco')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+
+        <div style="background-color: black;" class="card">
+            <img src="./assets/img/Groove/2-gris.jpg" alt="" width="300" height="200">
+            <div class="card-content">
+                <h1>Groove 2024 - Gris</h1>
+                <p class="descripcion" style="color: rgb(255, 255, 255);">El Groove en gris es una manifestación de
+                    elegancia y versatilidad. Con su carrocería pintada en un gris elegante y sobrio, este automóvil
+                    exuda un aire de sofisticación y clase. El tono de gris oscuro resalta los detalles del diseño del
+                    Groove, añadiendo un toque de refinamiento a su apariencia general. Este color neutro y discreto
+                    hace que el Groove gris sea una opción atractiva para aquellos que buscan un estilo sofisticado y
+                    sobrio que se destaque por su elegancia atemporal.</p>
+                <button class="buy-btn" onclick="addToCart('Groove 2024 - Gris')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+
+        <div style="background-color: black;" class="card">
+            <img src="./assets/img/Camiones/volvocar1.jpg" alt="" width="300" height="200">
+            <div class="card-content">
+                <h1>Volvo FMX - Verde Olivo</h1>
+                <p style="color: rgb(255, 255, 255);">El Volvo FMX se ajusta a tus desafíos. Sus innovaciones te
+                    permitirán aumentar la productividad y el ahorro de combustible. Algunas harán tu vida más fácil y
+                    mejorarán la experiencia de conducción. Otras, simplemente, te sorprenderán. El nuevo FMX es más
+                    seguridad, ahorro y productividad para tu negocio.</p>
+                <button class="buy-btn" onclick="addToCart('Volvo FMX - Verde Olivo')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div style="background-color: black;" class="card">
+        <img src="./assets/img/HY/H4INICIO.png" alt="" width="400" height="400">
+        <div class="card-content">
+            <h1>Hyundai Santa Fe 2024</h1>
+            <p style="color: rgb(255, 255, 255);"> Descubre la Hyundai Santa Fe 2024, un SUV que redefine la elegancia y el rendimiento. Su diseño exterior impresiona con líneas aerodinámicas y una parrilla frontal audaz, destacando su presencia en la carretera. En el interior, ofrece espacio para hasta siete pasajeros con materiales premium y tecnología avanzada, incluyendo una pantalla táctil de última generación y un sistema de sonido envolvente.
+
+                Bajo el capó, la Santa Fe 2024 combina potencia y eficiencia con opciones de motorización avanzadas que garantizan un rendimiento dinámico y económico.</p>
+            <button class="buy-btn" onclick="addToCart('Hyundai Santa Fe 2024')" style="background-color: white; color: black;">Comprar</button>
+        </div>
+    </div>
+    <div style="background-color: black;" class="card">
+        <img src="./assets/img/SUV VOLG/VOL1.jpg" alt="" width="400" height="400">
+        <div class="card-content">
+            <h1>Volkswagen T-cross</h1>
+            <p style="color: rgb(255, 255, 255);">Descubre el Volkswagen T-Cross, un SUV compacto diseñado para adaptarse a tu estilo de vida urbano y aventurero. Con un diseño moderno y dinámico, el T-Cross destaca por su versatilidad y eficiencia. Su interior espacioso y ergonómico ofrece comodidad superior para cinco pasajeros, junto con un maletero generoso que se adapta a tus necesidades diarias y de viaje.
+
+                Equipado con tecnología avanzada, el T-Cross cuenta con una pantalla táctil intuitiva, conectividad completa y sistemas de asistencia al conductor que aseguran una experiencia de conducción segura y placentera.</p>
+                <button class="buy-btn" onclick="addToCart('Volkswagen T-cross')" style="background-color: white; color: black;">Comprar</button>
+        </div>
+    </div>
+    <div class="card-container">
+        <div style="background-color: black;" class="card">
+            <img src="./assets/img/cascadia/cascadia.jpg" width="400" height="400">
+            <div class="card-content">
+                <h1>Freightliner Cascadia Truck</h1>
+                <p style="color: rgb(255, 255, 255);">El Freightliner Cascadia Truck es la encarnación definitiva de potencia, eficiencia y tecnología en el mundo del transporte de carga. Diseñado para dominar las carreteras, este camión impresiona con su robusto exterior y aerodinámica avanzada, que no solo mejora la eficiencia del combustible, sino que también reduce la resistencia al viento para un rendimiento óptimo.</p>
+                <button class="buy-btn" onclick="addToCart('Freightliner Cascadia Truck')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+        <div style="background-color: black;" class="card">
+            <img src="./assets/img/t800/1.jpg" width="400" height="400">
+            <div class="card-content">
+                <h1>KENWORTH T800</h1>
+                <p style="color: rgb(255, 255, 255);">
+                    El Kenworth T800 es un camión de clase premium reconocido por su robustez y fiabilidad en aplicaciones exigentes como la construcción y el transporte pesado. Equipado con potentes opciones de motorización y un diseño robusto, ofrece durabilidad y eficiencia en cada kilómetro. En su interior, proporciona confort con asientos ajustables y tecnología avanzada para mejorar la productividad del conductor.</p>
+                    <button class="buy-btn" onclick="addToCart('KENWORTH T800')" style="background-color: white; color: black;">Comprar</button>
+            </div>
+        </div>
+<div class="cart">
+
+    <div class="cart-content">
+        <h2 style="font-family: IMPACT;">CARRITO DE COMPRAS</h2>
+        <ul id="cart-items">
+        </ul>
+        <div class="cart-actions">
+            <button class="btn btn-secondary" onclick="checkout()" style="background-color: black; color: white;">COMPRAR</button>
+            <button class="btn btn-outline-secondary" onclick="clearCart()" style="background-color: black; color: white;">VACIAR CARRITO</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script>
+    function toggleCart() {
+        const cart = document.querySelector('.cart');
+        cart.classList.toggle('show');
+    }
+
+    function addToCart(productName) {
+        const cartItems = document.getElementById('cart-items');
+
+        const li = document.createElement('li');
+        li.textContent = productName;
+        cartItems.appendChild(li);
+    }
+
+    function clearCart() {
+        const cartItems = document.getElementById('cart-items');
+        cartItems.innerHTML = ''; 
+    }
+    function checkout() {
+        alert('Checkout realizado. Gracias por su compra!');
+    }
+</script>
 </body>
 </html>
+
